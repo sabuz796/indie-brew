@@ -183,13 +183,15 @@ footer{
   &>div{
     @include d-flex(row);
     justify-content: center;
-   
     gap: 4rem;
-    
+  }
+  .about-us{
+    @include d-flex(row);
+    gap: 4rem;
   }
   .company{
    p{
-    width: 80%;
+    width: 90%;
     margin: 2rem 0;
    }
   }

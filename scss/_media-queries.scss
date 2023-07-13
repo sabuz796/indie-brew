@@ -10,7 +10,40 @@
         display: block !important;
       }
     }
+    main{
+      flex-direction: column !important;
+      div{
+        width: 100% !important;
+      }
+    }
   }
+  .resource{
+    .social-icon{
+      @include d-flex(column !important);
+      div{
+        width: 100% !important;
+      }
+    }
+    .mobile{
+      @include d-flex(column !important);
+      div{
+        width: 100% !important;
+      }
+      .mobile-text{
+        order: -1;
+      }
+    }
+  }
+  footer{
+    &>div{
+      @include d-flex(column !important);
+      .about-us{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+  
 }
 
 // Medium screens (e.g., landscape smartphones)
