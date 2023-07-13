@@ -56,8 +56,42 @@
           line-height: 1.2;
         }
       }
+      .condition{
+        color: #664EFC;
+      }
+      .account{
+        background-color: #664EFC ;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 2rem 2rem;
+        border-radius: 1rem;
+        transition: all 0.3s;
+        position: relative;
+        &:hover{
+          background-color: #5f4fc8;
+          transform: translateY(-1rem);
+        }
+      }
     }
   }
   
   
+}
+
+// responsive 
+
+@media (max-width: 576px){
+  .input-section{
+    .form-element{
+      @include d-flex(column !important);
+    }
+  }
+}
+@media (min-width: 577px) and (max-width: 768px){
+  .input-section{
+    .form-element{
+      @include d-flex(column !important);
+    }
+  }
 }

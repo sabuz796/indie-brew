@@ -237,6 +237,52 @@
   line-height: 1.2;
 }
 
+.input-section .form-element .form-input .condition {
+  color: #664EFC;
+}
+
+.input-section .form-element .form-input .account {
+  background-color: #664EFC;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.input-section .form-element .form-input .account:hover {
+  background-color: #5f4fc8;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+@media (max-width: 576px) {
+  .input-section .form-element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .input-section .form-element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.8rem;
