@@ -1,0 +1,26 @@
+
+@mixin d-flex ($direction){
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin super-center {
+  display: grid;
+  place-items: center;
+}
+
+
+// styling button 
+
+@mixin main-button{
+    background-color: $btn-color;
+    padding: 2rem 4rem;
+    color: $btn-txt-color;
+    border-radius: 1rem;
+    transition: all 0.4s ease;
+    display: inline-block;
+    &:hover{
+      background-color: #5f4fc8;
+      transform: translateY(-1rem);
+    }
+}

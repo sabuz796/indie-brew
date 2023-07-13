@@ -1,0 +1,26 @@
+
+// Small screens (e.g., smartphones)
+@media (max-width: 576px){
+  .header-section{
+    .nav{
+      .nav-list{
+        display: none;
+      }
+      .hamburger{
+        display: block !important;
+      }
+    }
+  }
+}
+
+// Medium screens (e.g., landscape smartphones)
+@media (min-width: 577px) and (max-width: 768px){}
+
+// Large screens (e.g., small tablets)
+@media (min-width: 769px) and (max-width: 991px){}
+
+// Laptops
+@media (min-width: 992px) and (max-width: 1199px){}
+
+// Large desktops
+@media (min-width: 1200px){}
