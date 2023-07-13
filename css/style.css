@@ -61,6 +61,90 @@
   }
 }
 
+@media (min-width: 577px) and (max-width: 768px) {
+  .header-section main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    gap: 3rem;
+  }
+  .header-section main .hero-text, .header-section main .hero-img {
+    width: 100%;
+  }
+  .header-section main .hero-img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .resource {
+    padding: 2rem 0 !important;
+  }
+  .resource .wrapper .social-icon {
+    gap: 1rem;
+  }
+  .resource .wrapper .social-icon .social-text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .resource .wrapper .social-icon .social-text h2 {
+    font-size: 3.2rem;
+  }
+  .resource .wrapper .mobile {
+    gap: 1rem;
+  }
+  .resource .wrapper .mobile .mobile-text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  footer > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  footer > div .about-us {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .header-section main .hero-text, .header-section main .hero-img {
+    width: 100% !important;
+  }
+  .header-section main .hero-img {
+    -ms-flex-item-align: self-start;
+        -ms-grid-row-align: self-start;
+        align-self: self-start;
+  }
+  footer > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  footer > div .about-us {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.8rem;
@@ -102,6 +186,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

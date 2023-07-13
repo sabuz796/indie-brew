@@ -47,10 +47,75 @@
 }
 
 // Medium screens (e.g., landscape smartphones)
-@media (min-width: 577px) and (max-width: 768px){}
+@media (min-width: 577px) and (max-width: 768px){
+  .header-section{
+    main{
+      @include d-flex(column !important);
+      gap: 3rem;
+      .hero-text,.hero-img{
+        width: 100%;
+      }
+      .hero-img{
+        order: -1;
+      }
+    }
+
+  }
+  .resource{
+    padding: 2rem 0 !important;
+    .wrapper{
+      .social-icon{
+       gap: 1rem;
+       .social-text{
+        flex-grow: 1;
+        h2{
+          font-size: 3.2rem;
+        }
+       }
+      }
+      .mobile{
+        gap: 1rem;
+        .mobile-text{
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+  footer{
+    &>div{
+      @include d-flex(column !important);
+      .about-us{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
 
 // Large screens (e.g., small tablets)
-@media (min-width: 769px) and (max-width: 991px){}
+@media (min-width: 769px) and (max-width: 991px){
+  .header-section{
+    main{
+      .hero-text,.hero-img{
+        width: 100% !important;
+      }
+      .hero-img{
+        align-self: self-start;
+     
+      }
+    }
+  }
+  footer{
+    &>div{
+      @include d-flex(column !important);
+      .about-us{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+  }
+}
 
 // Laptops
 @media (min-width: 992px) and (max-width: 1199px){}

@@ -31,6 +31,7 @@ body{
     .nav{
       @include d-flex(row);
       justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
       ul{
         @include d-flex(row);
