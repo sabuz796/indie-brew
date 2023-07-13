@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up</title>
+  <!-- icon pack  -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- css reset  -->
+  <link rel="stylesheet" href="./css/fresh-css-reset.css" />
+  <!-- my custom css  -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header-section">
+    <div class="wrapper">
+      <nav class="nav">
+        <a href="#"><img src="./Assets/Logo.svg" alt="company-logo" /></a>
+        <i class="hamburger ph ph-list"></i>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" class="back-btn"><i class="back ph ph-arrow-square-left"></i>Back to homepage</a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <section class="input-section">
+    <div class="wrapper form-element">
+      <div class='form-text'>
+        <h1 class="">Create your personalized feed.</h1>
+        <article class="advantage">
+          <span class="icon">🎈</span>
+          <p class="info info--color">
+            <strong>Over 20 resources.</strong>
+            With resources ranging from Reddit to
+            IndieHackers, we've got all your needs
+            coverd.
+          </p>
+        </article>
+        <article class="advantage">
+          <span class="icon">🗞</span>
+          <p class="info info--color">
+            <strong>Delivered weekly.</strong>
+            Every week at exactly Tuesday
+            12:00 P.M EST - expect a value-packed
+            digest right in your email.
+          </p>
+        </article>
+        <article class="advantage">
+          <span class="icon">💡</span>
+          <p class="info info--color">
+            <strong>Unlimited ideas.</strong>
+            With all the ideas you'll be reading about,
+            what's stopping you from creating a sustainable
+            startup?  
+          </p>
+        </article>
+      </div>
+      <div class="form-input">
+        <form action="" method="post" class="form">
+          <h2 class="title-ft">Create your IndieBrew Account</h2>
+          <div class="email">
+            <label for="email" class="form__label">Email</label>
+            <input type="email" id="email" autofocus="" class="form__input" placeholder="john@example.com">
+          </div>
+          <div class="user-name">
+            <label for="user" class="form__label">Full Name</label>
+            <input type="text" id="user" class="form__input" placeholder="Jhon Doe">
+          </div>
+          <div class="password">
+            <label for="pass" class="form__label">Password</label>
+            <input type="password" id="pass" class="form__input" placeholder="At least 8 character">
+          </div>
+          <div class="terms">
+              <input type="checkbox" name="check" class="form__check">
+              <p class="form__info">By creating an account on IndieBrew, you agree to the <a href="">Terms &amp; Conditions.</a></p>
+          </div>
+          <button type="submit" class="form__btn">Create an Account</button>
+      </form>
+      </div>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>

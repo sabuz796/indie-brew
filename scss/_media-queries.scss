@@ -10,9 +10,9 @@
         display: block !important;
       }
     }
-    main{
-      flex-direction: column !important;
-      div{
+    .main{
+      flex-direction: column ;
+      .hero-text,.hero-img{
         width: 100% !important;
       }
     }
